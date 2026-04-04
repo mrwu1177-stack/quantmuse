@@ -1,0 +1,12 @@
+{
+  "binance": {
+    "api_key": "",
+    "secret_key": ""
+  },
+  "openai": {
+    "api_key": ""
+  },
+  "alpha_vantage": {
+    "api_key": ""
+  }
+}
