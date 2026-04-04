@@ -1,0 +1,13 @@
+{
+  "build": {
+    "builder": "NIXPACKS_PYTHON_BUILDER"
+  },
+  "deploy": {
+    "numReplicas": 1,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10,
+    "startCommand": "uvicorn data_service.web.api_server:APIServer --factory --host 0.0.0.0 --port $PORT",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 30
+  }
+}
