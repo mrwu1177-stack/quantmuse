@@ -6,8 +6,8 @@
     "numReplicas": 1,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10,
-    "startCommand": "uvicorn data_service.web.api_server:APIServer --factory --host 0.0.0.0 --port $PORT",
-    "healthcheckPath": "/",
-    "healthcheckTimeout": 30
+    "startCommand": "uvicorn data_service.web.api_server:app --host 0.0.0.0 --port $PORT",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 60
   }
 }
