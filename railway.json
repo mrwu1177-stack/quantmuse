@@ -1,5 +1,0 @@
-{
-  "deploy": {
-    "startCommand": "uvicorn data_service.web.api_server:APIServer --factory --host 0.0.0.0 --port 8000"
-  }
-}
